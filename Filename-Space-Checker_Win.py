@@ -1,8 +1,8 @@
 
 # HuBing DITChina © 2020 Beijing
-# Space Checker GUI
+# Filename Space Checker GUI
 # Scan & Replace Space Character in Filename.
-# V20200525ORG
+# V20200527A
 
 # OS: Windows10 Pro x64
 # Running Test Passed on Python 3.8.3 x64 Win10 Pro
@@ -35,7 +35,7 @@ def softVersion_fun():
 
 # 关于菜单 - 打开DITChina官网
 def openDITWebsite_fun():
-	os.system ('start https://git.ditchina.com')
+	os.system ('start https://git.ditchina.com')  # macOS系统下使用"open"命令
 
 
 # 1. 选择目标扫描路径函数
@@ -292,6 +292,4 @@ text_scrollBar.pack(side=RIGHT, fill=Y)
 listShowArea.configure(yscrollcommand = text_scrollBar.set)  # 设定滚动条滑块与文本框内容联动
 
 
-
 winRoot1.mainloop()
-
